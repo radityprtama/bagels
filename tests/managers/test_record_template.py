@@ -2,10 +2,10 @@ import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
-from bagels.managers import record_templates
-from bagels.models.account import Account
-from bagels.models.category import Category, Nature
-from bagels.models.database.db import Base
+from bunji.managers import record_templates
+from bunji.models.account import Account
+from bunji.models.category import Category, Nature
+from bunji.models.database.db import Base
 
 
 # Setup test database
@@ -28,7 +28,7 @@ def session(engine):
 @pytest.fixture(autouse=True)
 def setup_test_engine(monkeypatch, engine):
     # Replace the global engine with our test engine
-    import bagels.managers.record_templates as rt
+    import bunji.managers.record_templates as rt
 
     rt.Session = sessionmaker(bind=engine)
     yield

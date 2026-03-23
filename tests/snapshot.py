@@ -23,19 +23,19 @@ if os.path.exists(TEMP_INSTANCE_PATH):
         os.remove(os.path.join(TEMP_INSTANCE_PATH, file))
 
 # --------- Init app sequence -------- #
-from bagels.locations import set_custom_root
+from bunji.locations import set_custom_root
 
 set_custom_root(TEMP_INSTANCE_PATH)
 
-from bagels.config import load_config
+from bunji.config import load_config
 
 load_config()
 
-from bagels.models.database.app import init_db
+from bunji.models.database.app import init_db
 
 init_db()
 
-from bagels.app import App
+from bunji.app import App
 
 # -------------- Freeze -------------- #
 

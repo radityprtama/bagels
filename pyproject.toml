@@ -1,8 +1,8 @@
 [project]
-name = "Bagels"
+name = "Bunji"
 version = "0.3.12"
 authors = [
-    { name = "Jax", email = "enhancedjax@gmail.com" }
+    { name = "Raditya Pratama", email = "radityprtama@gmail.com" }
 ]
 description = "Powerful terminal expense tracker."
 readme = "README.md"
@@ -52,10 +52,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/EnhancedJax/Bagels"
-Repository = "https://github.com/EnhancedJax/Bagels"
-Issues = "https://github.com/EnhancedJax/Bagels/issues"
-Documentation = "https://github.com/EnhancedJax/Bagels/blob/main/README.md"
+Homepage = "https://github.com/radityprtama/Bunji"
+Repository = "https://github.com/radityprtama/Bunji"
+Issues = "https://github.com/radityprtama/Bunji/issues"
+Documentation = "https://github.com/radityprtama/Bunji/blob/main/README.md"
 
 
 [build-system]
@@ -63,7 +63,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project.scripts]
-bagels = "bagels.__main__:cli"
+bunji = "bunji.__main__:cli"
 
 [tool.uv]
 dev-dependencies = [
@@ -83,7 +83,7 @@ dev-dependencies = [
 allow-direct-references = true
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/bagels"]
+packages = ["src/bunji"]
 
 [tool.pytest.ini_options]
 markers = [

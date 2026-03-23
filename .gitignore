@@ -2,6 +2,6 @@ __pycache__/
 .venv/
 *.db
 dist/
-Bagels.egg-info/
+Bunji.egg-info/
 instance/
 snapshot_report.html
